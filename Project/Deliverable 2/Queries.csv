@@ -1,0 +1,20 @@
+SELECT name  FROM employee where cid =( Select cid FROM cinema WHERE address ='3832 Rutrum. Ave')
+name
+William Griffin
+Karina Mclean
+
+SELECT custname FROM customer where custid =( Select custid FROM orders WHERE cid =1357)
+custname
+Shafira Guerra
+
+SELECT time From screening where cid = (Select cid FROM cinema WHERE address ='3832 Rutrum. Ave')
+time
+ 10:00 pm 
+
+SELECT price FROM product where productid =( Select productid FROM orders WHERE cid =1357)
+price
+14
+
+Select seatnumber from ticket where ticketid = (Select productid from orders where cid = (Select cid FROM cinema WHERE address ='3832 Rutrum. Ave' ))
+seatnumber
+116

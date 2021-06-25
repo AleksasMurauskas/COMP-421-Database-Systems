@@ -1,0 +1,87 @@
+CREATE TABLE Borough (
+	b_name VARCHAR(30) NOT NULL,
+	population INTEGER,
+	PRIMARY KEY (b_name)
+);
+
+
+CREATE TABLE Person (
+	person_id INTEGER PRIMARY KEY,
+	email VARCHAR(50) NOT NULL,
+	phoneNbr CHAR(10) NOT NULL,
+	p_name VARCHAR(50) NOT NULL,
+	street_addr VARCHAR(50),
+	age INTEGER,
+	status VARCHAR(20),
+	b_name VARCHAR(30) NOT NULL,
+	FOREIGN KEY (b_name) REFERENCES Borough
+);
+
+CREATE TABLE Patient(
+	person_id INTEGER PRIMARY KEY,
+	FOREIGN KEY (person_id) REFERENCES Person
+);
+
+CREATE TABLE UnifectedPerson(
+	patient_id INTEGER PRIMARY KEY,
+	FOREIGN KEY (patient_id) REFERENCES Person(person_id)
+);
+
+
+CREATE TABLE Drug(
+	drugName VARCHAR(40),
+	atc CHAR(7),
+	PRIMARY KEY(drugName)
+);
+
+CREATE TABLE Professional(
+	hosp_id INTEGER PRIMARY KEY,
+	pro_name VARCHAR(50),
+	phoneNbr CHAR(10)
+);
+
+CREATE TABLE Test(
+	person_id INTEGER ,
+	testNum INTEGER,
+	testDate DATE,
+	result VARCHAR(15),
+	hosp_id INTEGER,
+	PRIMARY KEY(testNum),
+	FOREIGN KEY (hosp_id) REFERENCES Professional,
+	FOREIGN KEY (person_id) REFERENCES Person
+);
+
+CREATE TABLE Administration(
+	adminID INTEGER,
+	adminDate DATE,
+	dosage float,
+	time TIME,
+	hosp_id INTEGER NOT NULL,
+	patient_id INTEGER NOT NULL,
+	drugName VARCHAR(40) NOT NULL,
+	PRIMARY KEY(adminID),
+	FOREIGN KEY (hosp_id) REFERENCES Professional,
+	FOREIGN KEY (patient_id) REFERENCES Patient,
+	FOREIGN KEY (drugName) REFERENCES Drug
+);
+
+
+CREATE TABLE Observation(
+	observe_id INTEGER ,
+	date DATE,
+	time TIME,
+	hosp_id INTEGER NOT NULL,
+	patient_id INTEGER NOT NULL,
+	note VARCHAR(300),
+	PRIMARY KEY(observe_id),
+	FOREIGN KEY (hosp_id) REFERENCES Professional,
+	FOREIGN KEY (patient_id) REFERENCES Patient
+);
+
+
+CREATE TABLE Contact(
+	person_id INTEGER NOT NULL,
+	patient_id INTEGER NOT NULL,
+	FOREIGN KEY (person_id) REFERENCES Person,
+	FOREIGN KEY (person_id) REFERENCES Patient
+);

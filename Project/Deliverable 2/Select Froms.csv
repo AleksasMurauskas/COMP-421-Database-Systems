@@ -1,0 +1,25 @@
+SELECT * FROM cinema,,,SELECT * FROM customer,,,,SELECT * FROM ticket,,,SELECT * FROM product,,,SELECT * FROM catalog,,,SELECT * FROM employee,,,,,,,SELECT * FROM screening,,,,,
+cid,address,,custid,custname,custemail,,ticketid,seatnumber,,productid,price,,catalogid,cid,,eid,cid,name,email,salary,address,,movieid,cid,nbr,screeningnum,time,date
+1357,"P.O. Box 206, 6237 Augue St.",,5286,Shafira Guerra,Quisque@sodales.co.uk,,50,118,,50,14,,4591,1357,,1225,1357,Ocean Mcgee,et.ultrices@mattis.ca,52945,Ap #669-3490 Parturient Rd.,,323,1357,6,24, 11:00 pm ,6/26/1919
+1370,3832 Rutrum. Ave,,5317,Ina Chaney,placerat.eget@ullamcorpereueuismod.org,,55,116,,55,8,,4612,1370,,1232,1370,William Griffin,facilisis.vitae@faucibusleo.ca,55752,Ap #664-5510 Enim Avenue,,332,1370,7,27, 10:00 pm ,4/11/2020
+1383,716-952 Duis Rd.,,5348,Reese Tanner,id.risus@duinec.ca,,60,62,,60,3,,4633,1383,,1239,1383,Kylee Hunter,Cras.interdum.Nunc@felisorciadipiscing.net,44602,Ap #605-3590 Eu St.,,341,1383,7,30, 11 am ,9/24/1919
+1396,"870-6885 Quis, Avenue",,5379,Axel Porter,elementum.purus.accumsan@Vivamussitamet.com,,65,72,,65,26,,4654,1396,,1246,1396,Fletcher Giles,orci@Maecenasmalesuadafringilla.edu,45365,"813-1238 Ornare, St.",,350,1396,1,33, 9:30 pm ,2/1/2121
+1409,343-8210 Eget Road,,5410,Orson Velazquez,interdum.Sed@vitaesodalesnisi.ca,,70,73,,70,27,,4675,1409,,1253,1409,Theodore York,tellus.sem.mollis@risus.org,41291,"P.O. Box 910, 8185 Mauris Ave",,359,1409,10,36, 7:30 pm ,1/7/2020
+1422,847-8060 Consequat Ave,,5441,Ignatius Castaneda,Suspendisse.sagittis.Nullam@consequatpurus.co.uk,,75,111,,75,28,,4696,1422,,1260,1422,Michael Boyle,nulla@eleifendnondapibus.edu,33341,549-8126 Scelerisque Ave,,368,1422,5,39, 5:00 pm ,12/6/1919
+1435,"466-413 Suscipit, Av.",,5472,Camilla Church,dui.Fusce.aliquam@maurisMorbinon.com,,80,1,,80,5,,4717,1435,,1267,1435,Guy Farley,vulputate.velit.eu@arcuSed.ca,47249,"P.O. Box 170, 6791 Enim Road",,377,1435,6,42, 9:45 pm ,3/30/1919
+1448,Ap #198-7731 Nisi Rd.,,5503,Nayda Harvey,ac.turpis.egestas@massa.ca,,85,55,,85,11,,4738,1448,,1274,1448,Herman Wright,lorem.semper@enim.ca,56180,5571 Dis St.,,386,1448,5,45, 11 am ,12/7/1919
+1461,"P.O. Box 712, 8230 Aliquet St.",,5534,Leonard Mcfadden,mus.Proin.vel@ipsumSuspendisse.net,,90,64,,90,7,,4759,1461,,1281,1461,Kaitlin York,Nam.tempor.diam@a.ca,34693,764-2665 Et Street,,395,1461,5,48, 1:00 pm,7/27/2020
+1474,Ap #293-4110 Purus Ave,,5565,Maisie Powers,odio.Phasellus@gravidaAliquamtincidunt.com,,95,126,,95,21,,4780,1474,,1288,1474,Flynn Franklin,consequat@scelerisquelorem.org,49838,"P.O. Box 763, 1521 Interdum Rd.",,404,1474,10,51, 4:30 pm ,9/19/2020
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+SELECT * FROM fooditem,,,SELECT * FROM manager,,,,SELECT * FROM Orders,,,,,SELECT * FROM room,,,,SELECT * FROM movie,,,,,,,,,,,,
+foodid,,,mid,catalogid,,,custid,productid,cid,quantity,,cid,nbr,capacity,,movieid,name,rating,license,,,,,,,,,
+300,,,1925,4591,,,5286,50,1357,6,,1357,6,188,,323,"vel, venenatis vel, faucibus id,",3.463,EWI48AQO4BD,,,,,,,,,
+305,,,1932,4612,,,5317,55,1370,12,,1370,7,159,,332,"aliquet, sem ut cursus luctus,",2.985,PGI67BSC3ZD,,,,,,,,,
+310,,,1939,4633,,,5348,60,1383,13,,1383,7,229,,341,nec quam. Curabitur vel lectus.,3.43,AKL33OXP1BT,,,,,,,,,
+315,,,1946,4654,,,5379,65,1396,5,,1396,1,139,,350,ultrices. Vivamus rhoncus. Donec est.,3.869,ZSL38TYD7KN,,,,,,,,,
+320,,,1953,4675,,,5410,70,1409,6,,1409,10,231,,359,velit. Pellentesque ultricies dignissim lacus.,3.62,IIL97LHZ0MO,,,,,,,,,
+325,,,1960,4696,,,5441,75,1422,3,,1422,5,274,,368,Nullam lobortis quam a felis,3.765,UJA52QCV1AR,,,,,,,,,
+330,,,1967,4717,,,5472,80,1435,3,,1435,6,175,,377,"a, magna. Lorem ipsum dolor",3.723,SPA86WUM0TC,,,,,,,,,
+335,,,1974,4738,,,5503,85,1448,1,,1448,5,103,,386,arcu vel quam dignissim pharetra.,3.546,SIY88HQN3ZF,,,,,,,,,
+340,,,1981,4759,,,5534,90,1461,8,,1461,5,184,,395,tincidunt pede ac urna. Ut,3.49,XZQ79UKX9FV,,,,,,,,,
+345,,,1988,4780,,,5565,95,1474,8,,1474,10,232,,404,Suspendisse eleifend. Cras sed leo.,3.673,FRK48NVZ1UD,,,,,,,,,
